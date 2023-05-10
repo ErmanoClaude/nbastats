@@ -1,0 +1,37 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Welcome to Glitch!</title>
+    <script
+      src="https://kit.fontawesome.com/c8fbccaa28.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="/pageStyles/index.css" />
+  </head>
+  <body>
+    <div class="search-box">
+      <div class="row">
+        <input
+          type="text"
+          id="input-box"
+          placeholder="Enter current nba player"
+          autocomplete="off"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="result-box"></div>
+    </div>
+
+    <script type="module" src="/autocomplete.js"></script>
+    <script src ="/select.js"></script>
+  </body>
+</html>
